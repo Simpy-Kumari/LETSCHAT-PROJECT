@@ -1,0 +1,246 @@
+.formContainer {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to top, rgb(19, 19, 164), rgb(23, 23, 74));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .formWrapper {
+        background-color: white;
+        padding: 20px 40px;
+        border-radius: 10px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+            color: rgb(61, 61, 209);
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .userIcon {
+            font-size: 50px;
+            color: rgb(61, 61, 209);
+        }
+
+        .registerTitle {
+            color: #5d5b8d;
+            font-size: 18pxpx;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input {
+                padding: 15px;
+                border: none;
+                width: 250px;
+                border-bottom: 1px solid rgb(61, 61, 209);
+
+                &::placeholder {
+                    color: rgb(175, 175, 175);
+                }
+            }
+
+            button {
+                border: none;
+                cursor: pointer;
+                background-color: rgb(26, 26, 205);
+                color: white;
+                padding: 12px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        }
+        p {
+            color: rgb(59, 59, 192);
+            font-size: 13px;
+        }
+    }
+}
+
+
+.home {
+    background: linear-gradient(to top, rgb(53, 53, 99), rgb(14, 14, 53));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    .homeContainer {
+        border: 1px solid white;
+        border-radius: 10px;
+        height: 80%;
+        width: 70%;
+        display: flex;
+        overflow: hidden;
+
+        .sidebar {
+            flex: 3;
+            background-color: rgb(69, 82, 94);
+
+            .navbar {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                height: 40px;
+                background-color: rgb(49, 60, 65);
+                color: antiquewhite;
+
+                .logo {
+                    font-weight: bold;
+                }
+
+                .user {
+                    display: flex;
+                    gap: 10px;
+
+                    img {
+                        background-color: aliceblue;
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 2pc;
+                        object-fit: cover;
+                    }
+
+                    button {
+                        background-color: rgb(33, 37, 37);
+                        border: none;
+                        color: rgb(214, 226, 237);
+                        font-size: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .searchbar {
+
+                .searchForm {
+                    padding: 5px;
+    
+                    input {
+                        background-color: transparent;
+                        max-width: 100%;
+                        border: none;
+                        color: white;
+                        outline: none;
+                        border-bottom: 1px solid grey;
+    
+                        &::placeholder {
+                            color: grey;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .userChat {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                cursor: pointer;
+                color: antiquewhite;
+
+                &:hover {
+                    background-color: rgb(49, 60, 65);
+                }
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 2pc;
+                    object-fit: cover;
+                }
+                .userInfo{
+                    span{
+                        font-size: 16px; font-weight: 400;
+                    }
+                    p{
+                       font-size: 12px;
+                       margin-top: 0;
+                          color: lightgray;  
+                    }
+                }
+            }   
+        }
+
+        .chat {
+            background-color: rgb(126, 129, 142);
+            flex: 6;
+
+            .chatInfo{
+                height: 40px;
+                background-color: rgb(105, 117, 129);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                color: rgb(46, 42, 38);
+
+                .chatIcons{
+                    display: flex;
+                    gap: 10px;
+                    cursor: pointer;
+
+                }
+            }
+            .messages{
+                background-color: lightslategrey;
+                padding: 20px;
+                height: calc(100% - 160px);
+            }
+            .input{
+                background-color: rgb(163, 174, 184);
+                height: 60px;
+                padding:  10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                input{
+                    width: 100%;
+                    border: none;
+                    background-color: rgb(163, 174, 184);
+                    font-size: 15px;
+                    outline: none;
+
+                    &::placeholder{
+                        color: lightslategray;
+                    }
+                }
+                .send{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    color: rgb(46, 42, 38);
+
+                    .paperClip{
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                    .image{
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                    button{
+                        border: none;
+                        border-radius: 2pc;
+                        color: white;
+                        background-color: rgb(72, 109, 176);
+                        padding: 8px 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
